@@ -5,6 +5,7 @@ $green-hover: #09B47F
 $grey: #EDEDED
 $text: #292929
 
+$font-suisse-reg: SuisseIntl-Regular, sans-serif //400
 $font-suisse-bold: SuisseIntl-Bold, sans-serif
 $font-suisse-med: SuisseIntl-Medium, sans-serif
 $font-suisse-semb: SuisseIntl-SemiBold, sans-serif
@@ -278,7 +279,7 @@ body
       position: absolute
       bottom: 170px
       left: -426px
-      z-index: 2
+      z-index: 4
       span
         color: $magenta
       br
@@ -395,28 +396,23 @@ body
       img
         height: 100%
   &__footer
+    transform-origin: right bottom
+    transform: scale(0.9)
+    left: auto !important
     position: absolute
-    bottom: 16px
-    right: 70px
+    bottom: 20px
+    right: 20px
     z-index: 4
     display: flex
     align-items: center
-    &-top
-      max-width: 435px
-      margin: 0 57px 0 0
-      min-width: 165px
-    &-link
-      display: inline-block
-    &-bottom
-      display: flex
-      align-items: stretch
-    &-appStore
-      max-width: 168px
-      min-width: 168px
-      margin: 0 15px 0 0
-    &-googlePlay
-      min-width: 188px
-
+    &-text
+      font-family: $font-suisse-reg
+      color: #e8e8e8
+      font-size: 20px
+      line-height: 25px
+      letter-spacing: 0.02em
+      text-align: right
+      margin: 0 20px 0 0
 
 
   &__chip
